@@ -1,0 +1,58 @@
+body, html {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: linear-gradient(to right top, #4f4e4f, #5e5b5c, #6f6868, #7e7572, #8c847d, #968e87, #a19891, #aba29b, #b3a9a8, #b9b2b4, #bdbbbd, #c4c4c4);
+    background-repeat: no-repeat;
+}
+
+.login {
+    margin-left: -20px;
+}
+
+div.register, div.login {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 5%;
+    padding: 100px;
+    width: 500px;
+    text-align: center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        input, label, a {
+            border-radius: 5px;
+            margin: 2%;
+        }
+        
+        input {
+            border: 1px solid rgb(179, 178, 178);
+            padding: 5px;
+        }
+    }
+}
+
+div.login {
+    form {
+        input:not([type="submit"]) {
+            background-color: rgb(243, 243, 243);
+            border: 1px solid rgb(243, 243, 243);
+        }
+    }
+}
+
+div.register {
+    .registered {
+        display: block !important;
+    }
+
+    .unregistered {
+        display: none;
+    }
+}
